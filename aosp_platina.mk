@@ -29,11 +29,13 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 # Inherit device configuration
 $(call inherit-product, device/xiaomi/platina/device.mk)
 
-# Inherit AOSP product configuration
+# Inherit Evo-X product configuration
 TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_INCLUDE_WIFI_EXT := true
+TARGET_INCLUDE_STOCK_ARCORE := true
 TARGET_GAPPS_ARCH := arm64
 
-# Inherit some common AOSP stuff.
+# Inherit some common Evo-X stuff.
 $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
