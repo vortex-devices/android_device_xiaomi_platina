@@ -23,9 +23,9 @@
 
 # inherit MI 8 Lite AOSP device config
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_platina.mk
+    $(LOCAL_DIR)/revengeos_platina.mk
 
 COMMON_LUNCH_CHOICES := \
-    aosp_platina-eng \
-    aosp_platina-userdebug \
-    aosp_platina-user
+    revengeos_platina-eng \
+    revengeos_platina-userdebug \
+    revengeos_platina-user

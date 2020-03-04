@@ -29,14 +29,13 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 # Inherit device configuration
 $(call inherit-product, device/xiaomi/platina/device.mk)
 
-# Inherit Evo-X product configuration
+# Inherit RevengeOS product configuration
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_INCLUDE_WIFI_EXT := true
-TARGET_INCLUDE_STOCK_ARCORE := true
-TARGET_GAPPS_ARCH := arm64
+REVENGEOS_BUILDTYPE := OFFICIAL
 
-# Inherit some common Evo-X stuff.
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+# Inherit some common RevengeOS stuff.
+$(call inherit-product, vendor/revengeos/config/common.mk)
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME="platina" \
@@ -51,6 +50,6 @@ PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 # Device identifier
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MANUFACTURER := Xiaomi
-PRODUCT_NAME := aosp_platina
+PRODUCT_NAME := revengeos_platina
 PRODUCT_DEVICE := platina
 PRODUCT_MODEL := MI 8 Lite
