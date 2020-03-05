@@ -33,6 +33,7 @@ TARGET_TAP_TO_WAKE_NODE := "/proc/touchpanel/wake_gesture"
 TARGET_KERNEL_SOURCE := kernel/xiaomi/platina
 TARGET_KERNEL_CONFIG := platina_defconfig
 BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
+TARGET_KERNEL_VERSION := 4.14
 
 # Manifest
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
